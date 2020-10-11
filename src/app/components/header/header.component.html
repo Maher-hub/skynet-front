@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="alert-toolbar">
+
+    <span class="logo w3-large" style="font-family: 'Pacifico', cursive">
+      <button mat-button [matMenuTriggerFor]="menu">SkyNET</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngIf="!authService.isAuthentifier()" routerLink="/enregistre">s'abonné</button>
+        <button mat-menu-item *ngIf="authService.isAuthentifier()" routerLink="/">Home</button>
+        <button mat-menu-item *ngIf="authService.isAuthentifier()" (click)="deconnecter()" >Decconecter</button>
+      </mat-menu>
+    </span>
+    <span *ngIf="authService.isAuthentifier()">Bonjour Maher</span>
+  </mat-toolbar-row>
+</mat-toolbar>

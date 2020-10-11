@@ -1,0 +1,28 @@
+<form [formGroup]="profileForm">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input
+      formControlName="firstName"
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      placeholder="Enter email"
+      formControlName="pseudo"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="exampleInputPassword1"
+      placeholder="Password"
+      formControlName="mdp"
+    />
+  </div>
+
+  <button type="button" class="btn btn-primary" (click)="connected()">
+    valider
+  </button>
+</form>

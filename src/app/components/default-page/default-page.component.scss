@@ -1,0 +1,28 @@
+.container-default {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.default-right,.default-left {
+    margin: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+        height: 400px;
+        width: 400px;
+    }
+}
+.default-left {
+  width: 50%;
+  text-align: center;
+}
+
+.default-right {
+  width: 50%;
+  text-align: center;
+
+}

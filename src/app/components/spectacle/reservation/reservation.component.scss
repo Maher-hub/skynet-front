@@ -1,0 +1,21 @@
+.alert-content{
+  button{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .res-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

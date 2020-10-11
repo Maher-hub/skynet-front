@@ -1,0 +1,11 @@
+
+Réaliser  un site web avec Spring Boot  s'occupant de la gestion d'un bureau de réservation pour spectacle.
+Votre programme vend des réservations pour une représentation (un certain jour à une certain heure) d'un spectacle (caractérisé par son titre et son auteur).
+Un client, identifié par ses nom, adresse et numéro de téléphone, peut effectuer plusieurs réservations.
+Selon que le client est abonné du bureau ou pas, il bénéficie d'une ristourne, d'une propriété sur les réservations et de facilités de paiement.
+chaque réservation peut être de deux types : soit individuelle, soit en groupe.
+Dans les deux cas, des tickets sont délivrés au client : soit un ticket, soit autant de tickets que personnes du groupe.
+A chaque ticket correspond une place pour la représentation.
+
+
+

@@ -1,0 +1,39 @@
+<div class="spectacle-default">
+  <mat-card class="spectacle-left">
+    <h1>Spectacle</h1>
+    <mat-selection-list #shoes [multiple]="false">
+      <mat-list-option *ngFor="let shoe of spectalce">
+        <div class="spectacle">
+          <div>{{ shoe.auteur }} dans </div>
+          <mat-chip-list>
+            <mat-chip
+            style="width:144px;align-items: center;justify-content: center;"
+            >{{ shoe.titre }}</mat-chip>
+          </mat-chip-list>
+          <div><button (click)="show(shoe.id)">Voir Places</button></div>
+        </div>
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-card>
+  <mat-card class="spectacle-right">
+    <h1>Reserver votre place</h1>
+    <div class="reservation">
+      <div
+        *ngFor="let item of showPlaces.places"
+        class="place"
+        [ngClass]="{
+          reserve: item.reserved,
+          libre: !item.reserved,
+          whiting: item.reserved == null
+        }"
+      >
+        <button
+          (click)="reserver(item, showPlaces.spectacleId)"
+          [disabled]="item.reserved"
+        >
+          {{ item.numeroPlace }}
+        </button>
+      </div>
+    </div>
+  </mat-card>
+</div>

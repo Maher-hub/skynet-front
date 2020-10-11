@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.app-container {
+  height: 100%;
+
+  .app-drawer {
+    background-color: rgba(156, 136, 255, 0.2);
+    width: 250px;
+  }
+
+}
+.app-footer{
+  background-color: rgba(156, 136, 255,0.2);
+}

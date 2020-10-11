@@ -1,0 +1,20 @@
+<div class="alert-modal">
+  <div class="alert-content">
+    <div *ngIf="ad.item.service" class="res-wrap">
+      <div>
+        <img
+          src="assets\icon\img3.jpg"
+        />
+      </div>
+      <div>
+        <img
+          src="assets\icon\img4.jpg"
+        />
+      </div>
+    </div>
+    <input placeholder="nombre de personne" />
+    <button [mat-dialog-close]="ad.item.idPlace.id" cdkFocusInitial>
+      Reserver
+    </button>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<!-- header -->
+<app-header [isHome]="register" (emitIsHome)="emitIsHome($event)" ></app-header>
+
+<mat-drawer-container class="app-container">
+  <!-- <mat-drawer mode="side" opened class="app-drawer" *ngIf="register">
+    <app-sidebar></app-sidebar>
+  </mat-drawer> -->
+  <mat-drawer-content class="app-content">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+<!-- footer -->
+<div class="app-footer">
+  <app-footer></app-footer>
+</div>
